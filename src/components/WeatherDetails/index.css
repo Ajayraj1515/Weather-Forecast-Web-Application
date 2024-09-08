@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+.weather-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.weather-details {
+  font-size: 18px;
+  color: #555;
+}
+
+.weather-details p {
+  margin: 10px 0;
+}
+
+.sunny {
+  background: url('https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color:white;
+}
+
+.rainy {
+  background: url('https://as2.ftcdn.net/v2/jpg/01/63/96/63/1000_F_163966311_qh3qSk57mw9oLPOklZigzX9zlB5DgdaM.jpg')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.cloudy {
+  background: url('https://images.pexels.com/photos/1870259/pexels-photo-1870259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color:white;
+}
+
+.snowy {
+  background: url('https://media.istockphoto.com/id/137010458/photo/xl-winter-forest-blizzard.jpg?s=2048x2048&w=is&k=20&c=omHoYJzU1KnEbbS4XYjCEFKDzmK0pL36kYOW1A1TJrk=')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.default-background {
+  background-color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .weather-details {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .weather-details {
+    font-size: 14px;
+  }
+}
